@@ -4,7 +4,7 @@ import os
 
 def load_csv_data():
     """Loads the CSV file into a list of dictionaries."""
-    filename = input("Enter the name of the CSV file to process (e.g., grades.csv): ")
+    filename = input("Enter the name of the CSV file to process : ")
     
     if not os.path.exists(filename):
         print("Error: The file '" + filename + "' was not found.")
