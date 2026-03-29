@@ -68,11 +68,11 @@ def evaluate_grades(data):
         print("  STATUS: PASSED")
     else:
         print("  STATUS: FAILED")
-   
-    # Task 5: Find resubmission candidates
-     print("\nTask 5: Resubmission Eligibility")
+        
+        # Task 5: Find resubmission candidates
+        print("\nTask 5: Resubmission Eligibility")
         failed = [item for item in data if item['group'] == 'Formative' and item['score'] < 50]
-
+        
         if failed:
             max_weight = max(item['weight'] for item in failed)
             eligible = [item['assignment'] for item in failed if item['weight'] == max_weight]
